@@ -1,0 +1,421 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WW_Blog_AWP
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Site
+    internal_properties : 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
+    configuration_id : 2101872041071109760
+    type : 2
+    generation_name : WW_Blog_AWP.wdl
+    version :
+     major_version : 23
+     minor_version : 50
+     internal_generation_version : 4
+    index_page_generation_name : index
+    language : 2
+    64bits : true
+ elements :
+  identifier : 0x41dbfb260002f876
+  elements :
+   -
+     name : index
+     identifier : 0x41dc2f03000f8fc9
+     internal_properties : CAAAAAgAAADpZdE18q8HKA3tPaGT4YuQB7DSMoL57ZGOl7K8jIWRb51DlQr7zq6aTso0jBTMtCTsdA==
+     physical_name : .\index.wwh
+     type : 65538
+   -
+     name : PAGETPL_Blog
+     identifier : 0x41dc10ef000a0f71
+     internal_properties : CAAAAAgAAAAqIBJ2tfK65fhovCwenRwN7JnrI5uC/rNCrmL2xH2feYerD4BwUSsZyXVvSckH8+UvNw==
+     physical_name : .\PAGETPL_Blog.wwt
+     type : 65541
+   -
+     name : QRY_RecentArticles
+     identifier : 0x41dd1daa0018736b
+     internal_properties : CAAAAAgAAACHg+8z8K0FJg/rP6fhEY3uddJI6FU+Vf12KUl2RXUhj2m7eRbt3LCcTMgyjhbKtiqSkg==
+     physical_name : .\QRY_RecentArticles.WDR
+     type : 5
+   -
+     name : article
+     identifier : 0x41dd242c001cdf67
+     internal_properties : CAAAAAgAAAANCWW5BnM7ZEk5CR0vAPPYR8aeBrDw/d2y8hQIUaByXlauZinfIvpmGgbwyEi4QLAYGA==
+     physical_name : .\article.wwh
+     type : 65538
+   -
+     name : QRY_Popular_Tags
+     identifier : 0x41dd2f58002882d8
+     internal_properties : CAAAAAgAAAC6kOImhcJqdUg4DBwuEJzlaDs3P5ZnvtCOH9yT3qzgcES6fBPgIftpGQX/+bk3wzWfpw==
+     physical_name : .\QRY_Popular_Tags.WDR
+     type : 5
+   -
+     name : TPLC_Categories
+     identifier : 0x41dd30ee002ab4ef
+     internal_properties : CAAAAAgAAADtacXZ5lPbhKlZqT0Pcid8D2JuBqSU9qmCfgYi3wIIGOzgFIt/QhoG+iaQaCjYoBD4eA==
+     physical_name : .\TPLC_Categories.wwt
+     type : 65543
+   -
+     name : QRY_PublishedArticles
+     identifier : 0x41dd52db013738e0
+     internal_properties : CAAAAAgAAABHw6/zMG1FZk8rf2chJc2mtZL4+EUWmi+uoz16oQmNU7V/tVqtHPBcDAjyzlaKdmpS0g==
+     physical_name : .\QRY_PublishedArticles.WDR
+     type : 5
+   -
+     name : QRY_NbComments
+     identifier : 0x41dd80a001390508
+     internal_properties : CAAAAAgAAABTr4ufLBkRyuOP4+tVqlEypTScxHfIk4lKRFzb8NqwcFCQQM85iGTQsGxWomKeWk62vg==
+     physical_name : .\QRY_NbComments.WDR
+     type : 5
+   -
+     name : QRY_Comments
+     identifier : 0x41dd81ef013b2064
+     internal_properties : CAAAAAgAAADLRzPX1JGZQhv3GwM9A/3eccKcHCWuANGO98foy69vWVe1ZyjRMAx4aNTOKurmkgbOVg==
+     physical_name : .\QRY_Comments.WDR
+     type : 5
+   -
+     name : COL_Tools
+     identifier : 0x41dd8da00197cd76
+     internal_properties : CAAAAAgAAAC7l+MnhMFpcksnCxMtFI3ufVjEVFoiPIKvpB2wLfSmEu7CdhnhIPxoGAT++ro2wjaepg==
+     physical_name : .\COL_Tools.wdg
+     type : 7
+   -
+     name : COL_Préférences
+     identifier : 0x41de61a40028cc91
+     internal_properties : CAAAAAgAAAA5FWGlAn83OJ19TdFjmwdEL7wqooaXfbyKmOGAUq/v6dMd26RrXj4q3lpEvES8RLQcJA==
+     physical_name : .\COL_Préférences.wdg
+     type : 7
+   -
+     name : login
+     identifier : 0x41de6f4b00942202
+     internal_properties : CAAAAAgAAACppZH1Mm9HaE0tfWHTLNeki5qCyuRVPHVyQpLdnURWUrp6ulW7Du5aDgr0zFSMdGSstA==
+     physical_name : .\login.wwh
+     type : 65538
+   -
+     name : PAGETPL_Management
+     identifier : 0x41de7b350097ace3
+     internal_properties : CAAAAAgAAAA3Ex8DoJ2Vlr9brzcReyFSFVYg8MBRgJ2qcJ+cwn8X+d/N75B9TCAM/DiiHuYa5toiIg==
+     physical_name : .\PAGETPL_Management.wwt
+     type : 65541
+   -
+     name : dashboard
+     identifier : 0x41dea045009d72f2
+     internal_properties : CAAAAAgAAAArJxN3tPG54vuXuyMdaC1mvfj0JKqToklzY6MFeahiRop2Ao1xUCwYyHRuSsoG8uYuNg==
+     physical_name : .\dashboard.wwh
+     type : 65538
+   -
+     name : items
+     identifier : 0x41dea059009fbff9
+     internal_properties : CAAAAAgAAADSKAoerZqSTWAAZHTWMtChyJ8X31GKTo23socZ21a+UqIculW4CeNRMe3XIeEf2803Pw==
+     physical_name : .\items.wwh
+     type : 65538
+   -
+     name : medias
+     identifier : 0x41dea07400a128f8
+     internal_properties : CAAAAAgAAAD4ViB8y/C44/qWttpkaR5rAlO5sY2WzLKzs6j40DFb7d/X/5ByVzUjx3NtS8sF/fPdZQ==
+     physical_name : .\medias.wwh
+     type : 65538
+   -
+     name : comments
+     identifier : 0x41dea08a00a38089
+     internal_properties : CAAAAAgAAAAjHxsPvOnB2vOfs9tlYwVm+dpEhCRt53NTq9SM8g8PiXdF96hpWDQgwHxmUtIO6t4mLg==
+     physical_name : .\comments.wwh
+     type : 65538
+   -
+     name : users
+     identifier : 0x41dea0a100a5dc30
+     internal_properties : CAAAAAgAAABHw6/zMG1FZk8rf2chIMGagYyYyA4/l8Gjd9PV6ThaVqJuqmWtHPBcDAjyzlaKdmpS0g==
+     physical_name : .\users.wwh
+     type : 65538
+   -
+     name : settings
+     identifier : 0x41dea0bc00a743c8
+     internal_properties : CAAAAAgAAAA7F2OnBEHp8suni5OtnQlSEU60pPARDhp3ahKWWLll883H7aJhoHzomIR+ejq2QrYeJg==
+     physical_name : .\settings.wwh
+     type : 65538
+   -
+     name : tags
+     identifier : 0x41dea975003a5797
+     internal_properties : CAAAAAgAAAC3k5+DIB0VFj/bL7eR8p3OkdAoMJqLThJ0w9jXBzrYYFhIaBf9zKCMfLginmaaZlqiog==
+     physical_name : .\tags.wwh
+     type : 65538
+   -
+     name : categories
+     identifier : 0x41dea983003c8c1e
+     internal_properties : CAAAAAgAAACrp5P3NHE5YnsXO6OdP20WodKcrBw90k60+7cohouDtUvh+xTx0KyYSPTuykqGcmautg==
+     physical_name : .\categories.wwh
+     type : 65538
+   -
+     name : QRY_FindMedia
+     identifier : 0x41dfc262003e3524
+     internal_properties : CAAAAAgAAAA2HB4CoZ6WmbxcoDACVbDxAL3/twCR8HKqQKvUfS1nma9DV0jMPR8N/TmjHeUb59kjIw==
+     physical_name : .\QRY_FindMedia.WDR
+     type : 5
+   -
+     name : rss
+     identifier : 0x41e56636009454fb
+     internal_properties : CAAAAAgAAADOVCZ6yfa+8fSkmIiqrtT9PANrswVlJzCh+ipEN/oS9tY4XqFkpYf1lYF7Rc0D//HbWw==
+     physical_name : .\rss.wwh
+     type : 65538
+   -
+     name : edit_article
+     identifier : 0x41dfd42a0042a861
+     internal_properties : CAAAAAgAAABu9EZaaRYe0ZSE+OhKzzRdGFnXz4v9FChOzwjLko+Fa60VvcJEhWfVtWFbpW1jH5F7+w==
+     physical_name : .\edit_article.wwh
+     type : 65538
+   -
+     name : QRY_Articles
+     identifier : 0x41dff0660044f461
+     internal_properties : CAAAAAgAAABUMrz4x7z0914KWs54luarYsUhsZgBU86O2zp9QHqapgL4go2Oc0k3KxeBfwf5gXdBwQ==
+     physical_name : .\QRY_Articles.WDR
+     type : 5
+   -
+     name : QRY_FindComments
+     identifier : 0x41e4f86000464ad5
+     internal_properties : CAAAAAgAAACW/P4igf62uRz8wFDiKUAJQB3vd8A5qaGOv+eISUFT3dvX4yzs3b+tXdnDPcU7xzmDgw==
+     physical_name : .\QRY_FindComments.WDR
+     type : 5
+   -
+     name : TPLC_Manage_Medias
+     identifier : 0x41e53f81004c2283
+     internal_properties : CAAAAAgAAAD3U9/D4F3V1v+b7/dR+R1OBXKIGKR8b12Ol+ZRhL1Z98Ejsd49jGDMvHhiXibaphriYg==
+     physical_name : .\TPLC_Manage_Medias.wwt
+     type : 65543
+   -
+     name : QRY_Categories_Used
+     identifier : 0x41e69d2c004a09e1
+     internal_properties : CAAAAAgAAABv60dbaBUdzpeD5+9Z8iVWGWhQuCuU3DVKaFTbwNq4ULgYuNc1lGjUtGBapm5iHpJ6+g==
+     physical_name : .\QRY_Categories_Used.WDR
+     type : 5
+   -
+     name : QRY_SocialNetworks
+     identifier : 0x41e6c68c004da355
+     internal_properties : CAAAAAgAAAC2nJ6CIR4WGTzcILCC3LDRDE8L02p78062tTAHWlBExEjWwM9MvZ+NfbkjnWWbZ1mjow==
+     physical_name : .\QRY_SocialNetworks.WDR
+     type : 5
+   -
+     name : SET_HFTest
+     identifier : 0x428238590138015d
+     internal_properties : CAAAAAgAAAAkIgwol8xkBy7aKlMQIg64cjGJ0eSIfRGuU/jKppz4APjql2rZYJmHe6cR77cp0ccxMQ==
+     physical_name : .\SET_HFTest.wdg
+     type : 7
+   -
+     name : TEST_SET_HFTest
+     identifier : 0x4282385e01401338
+     internal_properties : CAAAAAgAAACllxP/+AXNbgLYoKS0FPn+ug+KeQnrT/2htcOpSWQjq2aA2hUbTbEi5OCLNB/7RK+g
+     physical_name : .\TEST_SET_HFTest.wxt
+     type : 17
+  other_elements : []
+  analysis : .\WW_Blog_AWP.ana\WW_Blog_AWP.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ common_generation_directory : true
+ wb_skin : 210 Material Design
+ wb_color_palette : Material Indigo
+ languages :
+  - en-GB
+ site_map :
+  roots : []
+  orphans :
+   -
+     name : article
+     parameters : []
+     title :
+      en-GB : Comments
+     description :
+      en-GB : Comments
+   -
+     name : comments
+     parameters : []
+     title :
+      fr-FR : Commentaires
+     description :
+      fr-FR : Commentaires
+   -
+     name : dashboard
+     parameters : []
+     title :
+      fr-FR : Tableau de bord
+      en-GB : Users
+     description :
+      fr-FR : Tableau de bord
+      en-GB : Users
+   -
+     name : edit_article
+     parameters : []
+     title :
+      fr-FR : Edition article
+      en-GB : Editing article
+     description :
+      fr-FR : Edition article
+      en-GB : Editing article
+   -
+     name : index
+     parameters : []
+     title : {}
+     description : {}
+   -
+     name : items
+     parameters : []
+     title :
+      fr-FR : articles
+      en-GB : items
+     description :
+      fr-FR : articles
+      en-GB : items
+   -
+     name : login
+     parameters : []
+     title :
+      fr-FR : Login
+     description :
+      fr-FR : Login
+   -
+     name : medias
+     parameters : []
+     title :
+      fr-FR : medias
+      en-GB : medias
+     description :
+      fr-FR : medias
+      en-GB : medias
+   -
+     name : rss
+     parameters : []
+     title :
+      en-GB : Login
+     description :
+      en-GB : Login
+   -
+     name : settings
+     parameters : []
+     title :
+      fr-FR : Réglages
+      en-GB : Settings
+     description :
+      fr-FR : Réglages
+      en-GB : Settings
+   -
+     name : users
+     parameters : []
+     title :
+      fr-FR : Utilisateurs
+      en-GB : Dashboard
+     description :
+      fr-FR : Utilisateurs
+      en-GB : Dashboard
+ url_rewriting :
+  internal_properties : CAAAAAgAAADkPzcUdUUS7wCiun+MCjqYH70RJdzkSv/nRvXZ3ENdikMa6bcHtsAH
+ code_elements :
+  internal_properties : CAAAAAgAAABHLOE56KbhJqhuwnVJSB9ifT28sjKsE4ah8VR4B6YQeVjY9eR2vgE3LKMH4qIs6w8QNW2Lh3Wbv+ZXk8VdQbzUO0rU1tD4bq8=
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABlbKQ34aM4VXuMme8YfOItErTGZF/6GmFvlIq4BDtnp9QBpXVqGTcLbNuseWtGjY4Dj9XrPkest8LP0wiZdevmXEA2PBPAXmQEPQtunkL9BCLfivKsIK5BjI3MZPiesRvE+F+jTWjcc5kr2PNWl82xjENBx1E8YT04YfcuCb/qaQ==
+     code : |1+
+      
+      HCreationIfNotFound("*")
+      
+      // Global variables
+      gsUploadDir 		is string = fWebDir() + [fSep] + "mediauploads"
+      gsDirDataUploads 	is string = fDataDir() + [fSep] + "mediauploads"
+      gsDirImages 		is string = fWebDir() + [fSep] + "images"
+      
+      if not fDirectoryExist(gsDirDataUploads) then
+      	fMakeDir(gsDirDataUploads)
+      end
+      
+      // Width of articles in pixels
+      gnArticleWidth 	is int = 685
+      
+      // Current user
+      gnCurrentUserID is int 
+      
+      gnParticipantID is int
+      
+      // Context
+      ConfigureAWPContext(ctxDisk)
+      DeclareAWPContext(gnParticipantID)
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Site
+     identifier : 0x41dbfb260003f8d4
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+ children :
+  -
+    explorer_type : pages
+    children :
+     -
+       name : Administration
+       explorer_type : custom_folder
+       children :
+        -
+          name : login
+          explorer_type : element
+          type : 65538
+        -
+          name : dashboard
+          explorer_type : element
+          type : 65538
+        -
+          name : items
+          explorer_type : element
+          type : 65538
+        -
+          name : medias
+          explorer_type : element
+          type : 65538
+        -
+          name : comments
+          explorer_type : element
+          type : 65538
+        -
+          name : users
+          explorer_type : element
+          type : 65538
+        -
+          name : settings
+          explorer_type : element
+          type : 65538
+        -
+          name : tags
+          explorer_type : element
+          type : 65538
+        -
+          name : categories
+          explorer_type : element
+          type : 65538
+        -
+          name : edit_article
+          explorer_type : element
+          type : 65538
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

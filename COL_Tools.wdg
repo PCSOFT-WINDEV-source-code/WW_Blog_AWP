@@ -1,0 +1,147 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_Tools
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1acf780b049bd719
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAACad/Tknar+VszCbzpkN17TM4vwd3Ph+FNGGe7L1R8UbBzKGejp00g4kCPeg84j+s04YY/pp0wvODlOJBjC4hYrU0KvoxVzs3I=
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : FormatStringForURL
+     procedure_id : 1931894753882593049
+     type_code : 15
+     code : |1+
+      
+      // Summary: Formats a string for the URL rewriting
+      // Syntax:
+      //[ <Result> = ] FormatStringForURL (<sString> is string)
+      //
+      // Parameters:
+      //	sString (ANSI string): String to format
+      // Return value:
+      // 	ANSI string: // 	None
+      //
+      // Example:
+      // Indicate an example.
+      //
+      Procédure FormatStringForURL(sString is string)
+      
+      sFormattedString is string
+      
+      sFormattedString = NoAccent(sString)
+      sFormattedString = Replace(sFormattedString," ","_")
+      sFormattedString = Replace(sFormattedString,"#","")
+      sFormattedString = Replace(sFormattedString,"-","")
+      sFormattedString = Replace(sFormattedString,"%","")
+      sFormattedString = Replace(sFormattedString,"?","")
+      sFormattedString = Replace(sFormattedString,"&","")
+      sFormattedString = Replace(sFormattedString,":","")
+      sFormattedString = Replace(sFormattedString,",","")
+      sFormattedString = Replace(sFormattedString,";","")
+      sFormattedString = Replace(sFormattedString,"""","")
+      
+      result sFormattedString
+     type : 458752
+   -
+     name : GiveGravatar
+     internal_properties : CAAAAAgAAAAWJ8eJDv+7cD6lsWNnh7zyNAsQQ1klSRIRIoYqUOXJDjUaAoAQkgHTeIIGLF/NZV36ufT7uaiOpLLqBkfWTkK9C72eK+IarTndzN6WGv6BsJQ6J5RNR3cEt5WkN2pGBWom0c0RMaAk8/W8BwoAEH9OBwFyCRwTFpm273vF3TOXcqIp2mlPaTnFk3U9Pa4GehdMVEqj+yQwYhN2MaN3MI8vL6lS9DZkAQYMoxe7kgeFaSgk6bfUd1xzHhltBEVi
+     procedure_id : 1931894753882658585
+     type_code : 15
+     code : |1-
+      // Summary: Gives an avatar from the Gravatar service
+      // Syntax:
+      //[ <Result> = ] GiveGravatar (<sEmailAddress> is string [, <nSize> is int])
+      //
+      // Parameters:
+      //	sEmailAddress (ANSI string): Email address for which an avatar is requested
+      // 	nSize (integer - default value=50): Size of the avatar
+      // Return value:
+      // 	ANSI string: URL of the avatar
+      //
+      Procédure GiveGravatar(sEmailAddress is string, nSize is int = 50)
+      
+      sAvatarURL is string
+      sHash is string 
+      
+      // Calculate the hash key
+      sHash= BufferToHexa(HashString(HA_MD5_128,Lower(NoSpace(sEmailAddress))))
+      
+      // Build the URL for an avatar of 50px
+      sAvatarURL = StringBuild("http://www.gravatar.com/avatar/%1?s=%2&d=mm",Replace(Lower(sHash)," ",""),nSize)
+      
+      result sAvatarURL
+     type : 458752
+   -
+     name : DisplayRSS
+     internal_properties : CAAAAAgAAABe3vs7djVe26z/HKKDOLd80VQvYbeL1VUmFiTkZ9XurwA4PJgtdORQ9HrNavrl66lis00MhYdJdNl8vgmUVgocpxvY/RT1if1EoxUx9z9XL5ib1HwIQwwry+BbqwDpfdjyMcoKP7KaVUUoNiXsCl28901BEMq3XgXI9VQ+Jembis13r8XyI4BdBaq8MO2NMIsvUmNynUX7s6oZH7c8Q1PmGMjgcKA5
+     procedure_id : 1931894753882724121
+     type_code : 15
+     code : |1-
+      
+      // Summary: Displays the RSS stream
+      //
+      Procédure DisplayRSS()
+      
+      MyStream is a rssStream
+      MyChannel is a rssChannel
+      MyEntry is a rssEntry
+      MyIdentifier is a rssIdentifier
+      bFirst is boolean = True
+      
+      // Characteristics of the channel
+      MyChannel..Title = LoadPref(COL_Preferences.BLOG_TITLE,"My blog")
+      MyChannel..Description = "RSS stream of " + MyChannel..Title
+      MyChannel..UpdateDate = DateSys() + TimeSys()
+      MyChannel..PublicationDate = DateSys() + TimeSys()
+      MyChannel..Link = LoadPref(BLOG_ADDRESS,SiteAddress())
+      
+      QRY_PublishedArticles.pSearch = ""
+      HExecuteQuery(QRY_PublishedArticles)
+      for each QRY_PublishedArticles 
+      	if bFirst then
+      		MyChannel..UpdateDate = DateSys() + TimeSys()
+      		MyChannel..PublicationDate = DateSys() + TimeSys()
+      		bFirst = False	
+      	end
+      	
+      	// Details of the article
+      	MyEntry..Author = QRY_PublishedArticles.DisplayName
+      	MyEntry..Description = Replace(QRY_PublishedArticles.Content,"mediauploads",MyChannel..Link + ["/"] + "../mediauploads")
+      	MyEntry..Title = QRY_PublishedArticles.Title
+      	MyEntry..PublicationDate = QRY_PublishedArticles.DateTime
+      	
+      	MyIdentifier..Value = QRY_PublishedArticles.ItemID
+      	MyIdentifier..PermanentLink = False
+      	MyEntry..Identifier = MyIdentifier
+      	MyEntry..Link = LoadPref(BLOG_ADDRESS,SiteAddress()) + ["/"] + FormatStringForURL(QRY_PublishedArticles.Title) + "-" + QRY_PublishedArticles.ItemID + ".awp"
+      	
+      	// Adds the article into the channel
+      	Add(MyChannel..Entry, MyEntry)
+      end
+      
+      // Adds the channel into the stream
+      Add(MyStream..Channel, MyChannel)
+      
+      // Displays the stream
+      rssDisplay(MyStream)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x11dd8d9d0124bf33
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,77 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : rss
+ major_version : 28
+ minor_version : 0
+ type : 65538
+ description : ""
+ subtype : 8192
+page :
+ name : rss
+ identifier : 0x21e56632fec746a9
+ internal_properties : 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
+ properties : {}
+ type : 1
+ languages :
+  - en-GB
+ code_elements :
+  type_code : 38
+  p_codes :
+   -
+     code : |1+
+      
+      DisplayRSS()
+     type : 851968
+   -
+     type : 852017
+     enabled : false
+   -
+     type : 852119
+     enabled : false
+   -
+     type : 852298
+     role : N
+   -
+     type : 851999
+     role : N
+   -
+     type : 852000
+     role : N
+   -
+     type : 852232
+     enabled : false
+   -
+     type : 852167
+     enabled : false
+   -
+     type : 852169
+     role : N
+     enabled : false
+   -
+     type : 852225
+     role : N
+     enabled : false
+   -
+     type : 852227
+     enabled : false
+   -
+     type : 1310979
+     enabled : false
+   -
+     type : 852228
+     role : N
+     enabled : false
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : PAGE_SansNom1
+resources :
+ string_res :
+  identifier : 0x11e56622076d08ee
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+webification :
+ internal_properties : CAAAAAgAAACYzxT95H3qP7nIys4LqA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
